@@ -1,0 +1,13 @@
+{
+  "version": "7",
+  "dialect": "mysql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1775802482759,
+      "tag": "0000_fat_spacker_dave",
+      "breakpoints": true
+    }
+  ]
+}
