@@ -1,6 +1,7 @@
 FROM node:20-alpine AS frontend-builder
 WORKDIR /app
 COPY package.json pnpm-lock.yaml ./
+COPY patches/ ./patches/
 RUN npm install -g pnpm && pnpm install --frozen-lockfile
 COPY . .
 RUN pnpm build
