@@ -2,7 +2,7 @@ FROM node:20-alpine AS frontend-builder
 WORKDIR /app
 COPY package.json pnpm-lock.yaml ./
 COPY patches/ ./patches/
-RUN npm install -g pnpm@10.4.1 && pnpm install --frozen-lockfile
+RUN npm install -g pnpm@10.4.1 && pnpm install --no-frozen-lockfile
 COPY . .
 RUN pnpm build
 
